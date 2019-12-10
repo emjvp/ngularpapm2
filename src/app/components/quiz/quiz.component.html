@@ -1,0 +1,23 @@
+<h4>Escoja su prueba</h4>
+<mat-radio-group aria-label="Select an option">
+    <mat-radio-button value="1" checked="true" (click)="seleccion()">Backend</mat-radio-button>
+    <mat-radio-button value="2" (click)="seleccion2()">Frontend</mat-radio-button>
+</mat-radio-group>
+<div *ngIf="opcion">
+    <ul>
+      <li>Pregunta uno de Backend</li>
+      <li>Pregunta dos de Backend</li>
+      <li>Pregunta tres de Backend</li>
+      <li>Pregunta cuatro de Backend</li>
+      <li>Pregunta cinco de Backend</li>
+    </ul>
+</div>
+<div *ngIf="!opcion">
+  <ul>
+    <li>Pregunta uno de Frontend</li>
+    <li>Pregunta dos de Frontend</li>
+    <li>Pregunta tres de Frontend</li>
+    <li>Pregunta cuatro de Frontend</li>
+    <li>Pregunta cinco de Frontend</li>
+  </ul>
+</div>
